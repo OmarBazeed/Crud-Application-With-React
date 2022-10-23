@@ -1,0 +1,38 @@
+.input-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+.input-info input,
+.input-info button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.input-info button {
+    background-color: #2196f3e0;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.input-info button:hover {
+    background-color: transparent;
+    border: 1px solid #2196f3;
+    transform: scale(1.1);
+    color: black;
+}
+
+.input-info input {
+    background-color: transparent;
+    color: black;
+    box-shadow: 0 0 10px 0 #379dee inset;
+}
+
+.input-info input:focus {
+    outline: none;
+}

@@ -1,0 +1,27 @@
+.small-li {
+    background: #487eb0d1;
+}
+
+.small-li input {
+    flex: 3 1;
+    border: none;
+    padding: 10px 20px;
+    background-color: transparent;
+    box-shadow: 0 0 15px white inset;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.small-li button {
+    background-color: #ff5722db;
+    font-size: 15px;
+}
+
+.small-li input:focus {
+    outline: none;
+}
+
+.small-li:hover button {
+    transform: translateX(15px);
+    font-weight: normal;
+}

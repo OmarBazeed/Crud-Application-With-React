@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.crud {
+    background: url('./19362653.jpg');
+    height: 100vh;
+    padding: 40px 0px;
+    background-position: center;
+    background-size: cover;
+}
+
+.App {
+    text-align: center;
+    width: 650px;
+    background: transparent;
+    box-shadow: 0 0 20px 0px #03a9f4 inset;
+    padding: 20px;
+    margin: auto;
+    filter: drop-shadow(5px 3px 2px black);
+}
+
+h2 {
+    margin: 0;
+    background: #000000a3;
+    color: white;
+    padding: 10px;
+    text-transform: capitalize;
+    font-size: 28px;
+    margin-bottom: 30px;
+    clip-path: polygon(0 0, 13% 49%, 0 100%, 100% 100%, 88% 48%, 100% 0);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0 5px;
+    font-size: 20px;
+}
+
+ul li {
+    margin-top: 10px;
+    background: linear-gradient(45deg, #000000a1, transparent);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+    font-size: 20px;
+    perspective: 1000px;
+}
+
+ul li span {
+    flex: 3;
+    text-transform: capitalize;
+    font-size: 22px;
+    color: white;
+}
+
+ul li button {
+    flex: 1 1;
+    margin-right: 5px;
+    padding: 7px;
+    background: #2196f3de;
+    border: none;
+    border-radius: 10px;
+    transition: .5s;
+    cursor: pointer;
+    transform-style: preserve-3d;
+}
+
+ul li:hover button {
+    transform: scale(.8) rotate(360deg);
+    font-weight: bold;
+}
+
+h3 {
+    background-color: #03a9f4;
+    position: relative;
+    width: fit-content;
+    margin: 10px auto;
+}
+
+h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20px;
+    background: #03a9f4;
+    mix-blend-mode: difference;
+    z-index: 2;
+    animation: moving infinite 8s linear;
+    border-radius: 10px;
+}
+
+@keyframes moving {
+    0%,
+    100% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 20px);
+    }
+}
+
+@media (max-width:524px) {
+    .App {
+        width: 300px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .input-info input {
+        width: 145px;
+        margin-right: 5px;
+    }
+    .input-info button {
+        font-size: 14px !important;
+    }
+    .small-li input {
+        width: 160px;
+    }
+    .small-li button {
+        font-size: 12px;
+    }
+    h3 {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+}
+
+.input-info input::placeholder {
+    color: tomato;
+}
