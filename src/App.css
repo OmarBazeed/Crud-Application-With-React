@@ -139,7 +139,7 @@ h3::before {
 @media screen and (max-width: 320px) {
     ul li button {
         font-weight: bold;
-        color: white;
+        color: white !important;
         font-size: 12px;
     }
 }
